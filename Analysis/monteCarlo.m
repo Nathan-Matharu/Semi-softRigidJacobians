@@ -866,7 +866,7 @@ difXYMC;
 % linear regression of the postures
 linRegress = zeros(inVals,outVals,numFingers);
 for a = 1: numFingers
-    linRegress(:,:,a) = excursions(:,:,a)\difXY(:,:,a);
+    linRegress(:,:,a) = excursionsMC(:,:,a)\difXYMC(:,:,a);
 end
 linRegress;
 %% calculate expected points based of the linear regressions and the excursion values for each finger
@@ -887,11 +887,16 @@ for b=1:numFingers
     for a=1:numInputsMC
         plot([difXYMC(a,1,b), yCalc(a, 1, b)], [difXYMC(a,2,b), yCalc(a,2,b)])
     end
-    title("Calculated dX and dY versus Actual")
+    title_plot = strcat("Calculated dX and dY versus Actual (", strcat(string(fingerLengths(b)), " cm)"));
+    title(title_plot)
     xlabel("Delta X")
     ylabel("Delta Y")
     hold off
 end
-%% this is just for me to use to pull data
-j = yCalc(:,:,7);
-k = yCalc(:,:,7)-difXYMC(:,:,7);
+%% R^2
+rtsq = zeros(numFingers,1);
+for a=1:numFingers
+    [R,P] = corrcoef(difXYMC(:,:,a), yCalc(:,:,a));
+    rtsq(a) = R(2,1);
+end
+rtsq = (rtsq.^2)
