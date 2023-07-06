@@ -1,0 +1,262 @@
+    # Project definitions (do not edit)
+Task: AllBones_JointLabels
+scorer: Nathan
+date: May30
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: G:/My Drive/Valerolab stuff/Projects/Hands/Semi-soft fingers/AllBones_JointLabels-Nathan-2023-05-30
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_9.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_1.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_2.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_3.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_4.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_5.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_6.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_7.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_8.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3.5cmBones_run_no_0.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3.5cmBones_run_no_1.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3.5cmBones_run_no_2.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3.5cmBones_run_no_4.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3.5cmBones_run_no_9.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_0.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4cmBones_run_no_9.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3.5cmBones_run_no_5.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3.5cmBones_run_no_6.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3.5cmBones_run_no_7.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3.5cmBones_run_no_8.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_0.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_1.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_2.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_3.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_9.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_0.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_4.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_5.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_6.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_7.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\3cmBones_run_no_8.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_1.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_2.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_3.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_4.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_5.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_6.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_7.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_8.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5cmBones_run_no_9.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_0.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_1.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_2.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_3.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_4.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_5.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_6.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_7.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_8.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2cmBones_run_no_9.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_0.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_1.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_2.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_3.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_4.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_5.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_6.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_7.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_8.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5cmBones_run_no_9.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_0.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_1.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_2.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_3.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_4.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_5.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_6.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_7.mp4
+  : crop: 0, 1280, 0, 720
+  ? G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1cmBones_run_no_8.mp4
+  : crop: 0, 1280, 0, 720
+
+  G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2_0.mp4:
+    crop: 0, 1280, 0, 720
+  G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1.5_0.mp4:
+    crop: 0, 1280, 0, 720
+  G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\1_0.mp4:
+    crop: 0, 1280, 0, 720
+  G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\4_3_.mp4:
+    crop: 0, 1280, 0, 720
+  G:\My Drive\Valerolab stuff\Projects\Hands\Semi-soft fingers\AllBones_JointLabels-Nathan-2023-05-30\videos\2.5_2.mp4:
+    crop: 0, 1280, 0, 720
+bodyparts:
+- Ground
+- Endpoint
+- hMax
+- vMax
+- Joint1
+- Joint2
+- Joint3
+- Bone1
+- Bone2
+- predEndpoint
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - Ground
+  - Joint1
+- - Joint1
+  - Bone1
+- - Bone1
+  - Joint2
+- - Joint2
+  - Bone2
+- - Bone2
+  - Joint3
+- - Joint3
+  - Endpoint
+- - hMax
+  - Endpoint
+- - vMax
+  - Endpoint
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true

@@ -1,0 +1,819 @@
+2023-05-31 13:45:49 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle3.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.00025,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\Documentation_data-AllBones_JointLabels_95shuffle3.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'G:/My Drive/Valerolab stuff/Projects/Hands/Semi-soft '
+                 'fingers/AllBones_JointLabels-Nathan-2023-05-30',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle3\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-05-31 13:46:46 iteration: 1000 loss: 0.0205 lr: 0.00024932893575169146
+2023-05-31 13:47:36 iteration: 2000 loss: 0.0087 lr: 0.0002473230997566134
+2023-05-31 13:48:27 iteration: 3000 loss: 0.0055 lr: 0.00024400441907346249
+2023-05-31 13:49:16 iteration: 4000 loss: 0.0044 lr: 0.00023940933169797063
+2023-05-31 13:50:07 iteration: 5000 loss: 0.0040 lr: 0.00023358812904916704
+2023-05-31 13:50:58 iteration: 6000 loss: 0.0033 lr: 0.00022660459217149764
+2023-05-31 13:51:48 iteration: 7000 loss: 0.0031 lr: 0.0002185352350352332
+2023-05-31 13:52:38 iteration: 8000 loss: 0.0029 lr: 0.00020946850418113172
+2023-05-31 13:53:29 iteration: 9000 loss: 0.0027 lr: 0.00019950370187871158
+2023-05-31 13:54:20 iteration: 10000 loss: 0.0025 lr: 0.00018875001114793122
+2023-05-31 13:55:10 iteration: 11000 loss: 0.0023 lr: 0.0001773252442944795
+2023-05-31 13:56:01 iteration: 12000 loss: 0.0024 lr: 0.00016535459144506603
+2023-05-31 13:56:52 iteration: 13000 loss: 0.0022 lr: 0.00015296917990781367
+2023-05-31 13:57:42 iteration: 14000 loss: 0.0021 lr: 0.00014030473539605737
+2023-05-31 14:10:06 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle3.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle3\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-05-31 14:11:25 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle3.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle3\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-05-31 14:15:17 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle3.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle3\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-07-01 17:58:39 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle4.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.00025,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\Documentation_data-AllBones_JointLabels_95shuffle4.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'G:/My Drive/Valerolab stuff/Projects/Hands/Semi-soft '
+                 'fingers/AllBones_JointLabels-Nathan-2023-05-30',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle4\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-07-01 18:00:06 iteration: 1000 loss: 0.0223 lr: 0.00024932893575169146
+2023-07-01 18:01:35 iteration: 2000 loss: 0.0123 lr: 0.0002473230997566134
+2023-07-01 18:03:04 iteration: 3000 loss: 0.0086 lr: 0.00024400441907346249
+2023-07-01 18:04:29 iteration: 4000 loss: 0.0052 lr: 0.00023940933169797063
+2023-07-01 18:05:58 iteration: 5000 loss: 0.0042 lr: 0.00023358812904916704
+2023-07-01 18:07:27 iteration: 6000 loss: 0.0038 lr: 0.00022660459217149764
+2023-07-01 18:08:58 iteration: 7000 loss: 0.0034 lr: 0.0002185352350352332
+2023-07-01 18:10:27 iteration: 8000 loss: 0.0031 lr: 0.00020946850418113172
+2023-07-01 18:11:57 iteration: 9000 loss: 0.0029 lr: 0.00019950370187871158
+2023-07-01 18:13:27 iteration: 10000 loss: 0.0027 lr: 0.00018875001114793122
+2023-07-01 18:14:55 iteration: 11000 loss: 0.0024 lr: 0.0001773252442944795
+2023-07-01 18:16:23 iteration: 12000 loss: 0.0024 lr: 0.00016535459144506603
+2023-07-01 18:17:52 iteration: 13000 loss: 0.0023 lr: 0.00015296917990781367
+2023-07-01 18:19:20 iteration: 14000 loss: 0.0023 lr: 0.00014030473539605737
+2023-07-01 18:20:50 iteration: 15000 loss: 0.0021 lr: 0.0001275000104214996
+2023-07-01 18:22:19 iteration: 16000 loss: 0.0020 lr: 0.00011469527089502662
+2023-07-01 18:23:48 iteration: 17000 loss: 0.0020 lr: 0.00010203082638327032
+2023-07-01 18:24:49 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle4.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle4\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-07-01 18:26:59 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle4.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle4\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-07-01 18:40:23 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle4.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle4\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-07-05 19:35:22 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle4.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0002,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\Documentation_data-AllBones_JointLabels_95shuffle4.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': 'G:/My Drive/Valerolab stuff/Projects/Hands/Semi-soft '
+                 'fingers/AllBones_JointLabels-Nathan-2023-05-30',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle4\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-07-05 19:35:42 iteration: 100 loss: 0.0744 lr: 0.00019999462529085577
+2023-07-05 19:35:47 iteration: 200 loss: 0.0239 lr: 0.00019997850176878273
+2023-07-05 19:35:52 iteration: 300 loss: 0.0213 lr: 0.00019995163893327117
+2023-07-05 19:35:57 iteration: 400 loss: 0.0192 lr: 0.00019991403678432107
+2023-07-05 19:36:03 iteration: 500 loss: 0.0174 lr: 0.00019986569532193244
+2023-07-05 19:36:08 iteration: 600 loss: 0.0172 lr: 0.00019980661454610527
+2023-07-05 19:36:13 iteration: 700 loss: 0.0152 lr: 0.00019973682356067002
+2023-07-05 19:36:18 iteration: 800 loss: 0.0148 lr: 0.00019965629326179624
+2023-07-05 19:36:23 iteration: 900 loss: 0.0155 lr: 0.0001995650673052296
+2023-07-05 19:36:29 iteration: 1000 loss: 0.0143 lr: 0.0001994631311390549
+2023-07-05 19:36:34 iteration: 1100 loss: 0.0143 lr: 0.00019935051386710256
+2023-07-05 19:36:40 iteration: 1200 loss: 0.0137 lr: 0.00019922724459320307
+2023-07-05 19:36:46 iteration: 1300 loss: 0.0130 lr: 0.00019909329421352595
+2023-07-05 19:36:55 iteration: 1400 loss: 0.0125 lr: 0.00019894869183190167
+2023-07-05 19:37:04 iteration: 1500 loss: 0.0131 lr: 0.00019879345200024545
+2023-07-05 19:37:13 iteration: 1600 loss: 0.0122 lr: 0.00019862760382238775
+2023-07-05 19:37:23 iteration: 1700 loss: 0.0108 lr: 0.0001984511618502438
+2023-07-05 19:37:32 iteration: 1800 loss: 0.0116 lr: 0.00019826414063572884
+2023-07-05 19:37:42 iteration: 1900 loss: 0.0111 lr: 0.0001980665692826733
+2023-07-05 19:37:51 iteration: 2000 loss: 0.0104 lr: 0.00019785846234299242
+2023-07-05 19:38:01 iteration: 2100 loss: 0.0094 lr: 0.00019763983436860144
+2023-07-05 19:38:10 iteration: 2200 loss: 0.0099 lr: 0.00019741072901524603
+2023-07-05 19:38:20 iteration: 2300 loss: 0.0102 lr: 0.00019717116083484143
+2023-07-05 19:38:29 iteration: 2400 loss: 0.0091 lr: 0.00019692114437930286
+2023-07-05 19:38:38 iteration: 2500 loss: 0.0094 lr: 0.000196660723304376
+2023-07-05 19:38:46 iteration: 2600 loss: 0.0083 lr: 0.00019638992671389133
+2023-07-05 19:38:56 iteration: 2700 loss: 0.0090 lr: 0.00019610878371167928
+2023-07-05 19:39:05 iteration: 2800 loss: 0.0088 lr: 0.0001958173088496551
+2023-07-05 19:39:14 iteration: 2900 loss: 0.0088 lr: 0.00019551554578356445
+2023-07-05 19:39:23 iteration: 3000 loss: 0.0084 lr: 0.0001952035236172378
+2023-07-05 19:39:32 iteration: 3100 loss: 0.0088 lr: 0.00019488130055833608
+2023-07-05 19:39:42 iteration: 3200 loss: 0.0076 lr: 0.00019454887660685927
+2023-07-05 19:39:51 iteration: 3300 loss: 0.0077 lr: 0.00019420630997046828
+2023-07-05 19:40:00 iteration: 3400 loss: 0.0070 lr: 0.00019385362975299358
+2023-07-05 19:40:09 iteration: 3500 loss: 0.0065 lr: 0.00019349086505826563
+2023-07-05 19:40:18 iteration: 3600 loss: 0.0061 lr: 0.00019311808864586055
+2023-07-05 19:40:27 iteration: 3700 loss: 0.0059 lr: 0.0001927353150676936
+2023-07-05 19:40:36 iteration: 3800 loss: 0.0057 lr: 0.0001923425734275952
+2023-07-05 19:40:45 iteration: 3900 loss: 0.0051 lr: 0.00019193995103705674
+2023-07-05 19:40:54 iteration: 4000 loss: 0.0053 lr: 0.00019152746244799346
+2023-07-05 19:41:04 iteration: 4100 loss: 0.0050 lr: 0.00019110515131615102
+2023-07-05 19:41:12 iteration: 4200 loss: 0.0047 lr: 0.0001906730467453599
+2023-07-05 19:41:21 iteration: 4300 loss: 0.0048 lr: 0.00019023125059902668
+2023-07-05 19:41:31 iteration: 4400 loss: 0.0050 lr: 0.00018977974832523614
+2023-07-05 19:41:40 iteration: 4500 loss: 0.0047 lr: 0.00018931862723547965
+2023-07-05 19:41:49 iteration: 4600 loss: 0.0045 lr: 0.00018884794553741813
+2023-07-05 19:41:58 iteration: 4700 loss: 0.0049 lr: 0.00018836774688679725
+2023-07-05 19:42:07 iteration: 4800 loss: 0.0047 lr: 0.00018787806038744748
+2023-07-05 19:42:17 iteration: 4900 loss: 0.0044 lr: 0.00018737895879894495
+2023-07-05 19:42:27 iteration: 5000 loss: 0.0043 lr: 0.00018687048577703536
+2023-07-05 19:42:36 iteration: 5100 loss: 0.0040 lr: 0.00018635272863321006
+2023-07-05 19:42:45 iteration: 5200 loss: 0.0040 lr: 0.0001858257019193843
+2023-07-05 19:42:54 iteration: 5300 loss: 0.0042 lr: 0.0001852894783951342
+2023-07-05 19:43:03 iteration: 5400 loss: 0.0040 lr: 0.00018474413082003593
+2023-07-05 19:43:12 iteration: 5500 loss: 0.0040 lr: 0.00018418970284983516
+2023-07-05 19:43:21 iteration: 5600 loss: 0.0039 lr: 0.00018362628179602325
+2023-07-05 19:43:30 iteration: 5700 loss: 0.0042 lr: 0.00018305389676243067
+2023-07-05 19:43:39 iteration: 5800 loss: 0.0035 lr: 0.00018247262050863355
+2023-07-05 19:43:48 iteration: 5900 loss: 0.0037 lr: 0.00018188252579420805
+2023-07-05 19:43:57 iteration: 6000 loss: 0.0035 lr: 0.00018128365627489984
+2023-07-05 19:44:06 iteration: 6100 loss: 0.0035 lr: 0.00018067611381411552
+2023-07-05 19:44:15 iteration: 6200 loss: 0.0034 lr: 0.0001800599420676008
+2023-07-05 19:44:24 iteration: 6300 loss: 0.0037 lr: 0.00017943517013918608
+2023-07-05 19:44:34 iteration: 6400 loss: 0.0039 lr: 0.00017880195809993893
+2023-07-05 19:44:43 iteration: 6500 loss: 0.0038 lr: 0.00017816030594985932
+2023-07-05 19:44:53 iteration: 6600 loss: 0.0036 lr: 0.0001775102864485234
+2023-07-05 19:45:02 iteration: 6700 loss: 0.0036 lr: 0.00017685200145933777
+2023-07-05 19:45:11 iteration: 6800 loss: 0.0031 lr: 0.0001761854946380481
+2023-07-05 19:45:20 iteration: 6900 loss: 0.0033 lr: 0.00017551088239997625
+2023-07-05 19:45:29 iteration: 7000 loss: 0.0034 lr: 0.00017482817929703742
+2023-07-05 19:45:39 iteration: 7100 loss: 0.0031 lr: 0.00017413751629646868
+2023-07-05 19:45:48 iteration: 7200 loss: 0.0032 lr: 0.00017343890795018524
+2023-07-05 19:45:57 iteration: 7300 loss: 0.0031 lr: 0.0001727324997773394
+2023-07-05 19:46:06 iteration: 7400 loss: 0.0031 lr: 0.0001720183208817616
+2023-07-05 19:46:15 iteration: 7500 loss: 0.0031 lr: 0.00017129645857494324
+2023-07-05 19:46:24 iteration: 7600 loss: 0.0030 lr: 0.0001705670147202909
+2023-07-05 19:46:33 iteration: 7700 loss: 0.0029 lr: 0.00016983003297355026
+2023-07-05 19:46:42 iteration: 7800 loss: 0.0034 lr: 0.0001690856006462127
+2023-07-05 19:46:51 iteration: 7900 loss: 0.0030 lr: 0.00016833383415360004
+2023-07-05 19:47:01 iteration: 8000 loss: 0.0029 lr: 0.0001675747917033732
+2023-07-05 19:47:11 iteration: 8100 loss: 0.0030 lr: 0.0001668085460551083
+2023-07-05 19:47:20 iteration: 8200 loss: 0.0031 lr: 0.0001660352136241272
+2023-07-05 19:47:29 iteration: 8300 loss: 0.0033 lr: 0.0001652548526180908
+2023-07-05 19:47:38 iteration: 8400 loss: 0.0030 lr: 0.00016446755034849048
+2023-07-05 19:47:47 iteration: 8500 loss: 0.0026 lr: 0.00016367339412681758
+2023-07-05 19:47:56 iteration: 8600 loss: 0.0031 lr: 0.0001628724712645635
+2023-07-05 19:48:05 iteration: 8700 loss: 0.0028 lr: 0.00016206488362513483
+2023-07-05 19:48:15 iteration: 8800 loss: 0.0032 lr: 0.00016125068941619247
+2023-07-05 19:48:24 iteration: 8900 loss: 0.0029 lr: 0.0001604300196049735
+2023-07-05 19:48:33 iteration: 9000 loss: 0.0030 lr: 0.00015960294695105404
+2023-07-05 19:48:43 iteration: 9100 loss: 0.0027 lr: 0.00015876954421401024
+2023-07-05 19:48:52 iteration: 9200 loss: 0.0027 lr: 0.0001579299132572487
+2023-07-05 19:49:01 iteration: 9300 loss: 0.0027 lr: 0.00015708415594417602
+2023-07-05 19:49:10 iteration: 9400 loss: 0.0028 lr: 0.00015623235958628356
+2023-07-05 19:49:19 iteration: 9500 loss: 0.0026 lr: 0.0001553746114950627
+2023-07-05 19:49:28 iteration: 9600 loss: 0.0027 lr: 0.00015451101353392005
+2023-07-05 19:49:37 iteration: 9700 loss: 0.0026 lr: 0.00015364166756626219
+2023-07-05 19:49:46 iteration: 9800 loss: 0.0026 lr: 0.00015276664635166526
+2023-07-05 19:49:56 iteration: 9900 loss: 0.0027 lr: 0.00015188603720162064
+2023-07-05 19:50:05 iteration: 10000 loss: 0.0026 lr: 0.00015100000018719584
+2023-07-05 19:50:15 iteration: 10100 loss: 0.0027 lr: 0.0001501085644122213
+2023-07-05 19:50:24 iteration: 10200 loss: 0.0027 lr: 0.0001492118462920189
+2023-07-05 19:50:32 iteration: 10300 loss: 0.0027 lr: 0.0001483099622419104
+2023-07-05 19:50:41 iteration: 10400 loss: 0.0025 lr: 0.00014740301412530243
+2023-07-05 19:50:50 iteration: 10500 loss: 0.0025 lr: 0.0001464910601498559
+2023-07-05 19:50:59 iteration: 10600 loss: 0.0025 lr: 0.00014557424583472311
+2023-07-05 19:51:08 iteration: 10700 loss: 0.0027 lr: 0.00014465264393948019
+2023-07-05 19:51:17 iteration: 10800 loss: 0.0026 lr: 0.00014372637087944895
+2023-07-05 19:51:26 iteration: 10900 loss: 0.0024 lr: 0.00014279551396612078
+2023-07-05 19:51:35 iteration: 11000 loss: 0.0026 lr: 0.0001418601896148175
+2023-07-05 19:51:45 iteration: 11100 loss: 0.0025 lr: 0.0001409204996889457
+2023-07-05 19:51:54 iteration: 11200 loss: 0.0023 lr: 0.00013997651694808155
+2023-07-05 19:52:03 iteration: 11300 loss: 0.0026 lr: 0.0001390283869113773
+2023-07-05 19:52:12 iteration: 11400 loss: 0.0025 lr: 0.00013807619689032435
+2023-07-05 19:52:21 iteration: 11500 loss: 0.0024 lr: 0.00013712004874832928
+2023-07-05 19:52:30 iteration: 11600 loss: 0.0023 lr: 0.0001361600443487987
+2023-07-05 19:52:39 iteration: 11700 loss: 0.0024 lr: 0.00013519631465896964
+2023-07-05 19:52:47 iteration: 11800 loss: 0.0025 lr: 0.00013422893243841827
+2023-07-05 19:52:57 iteration: 11900 loss: 0.0020 lr: 0.00013325799955055118
+2023-07-05 19:53:06 iteration: 12000 loss: 0.0022 lr: 0.00013228366151452065
+2023-07-05 19:53:15 iteration: 12100 loss: 0.0026 lr: 0.00013130599108990282
+2023-07-05 19:53:24 iteration: 12200 loss: 0.0025 lr: 0.00013032510469201952
+2023-07-05 19:53:34 iteration: 12300 loss: 0.0024 lr: 0.00012934111873619258
+2023-07-05 19:53:43 iteration: 12400 loss: 0.0026 lr: 0.0001283541350858286
+2023-07-05 19:53:52 iteration: 12500 loss: 0.0022 lr: 0.00012736425560433418
+2023-07-05 19:54:01 iteration: 12600 loss: 0.0022 lr: 0.00012637161125894636
+2023-07-05 19:54:10 iteration: 12700 loss: 0.0023 lr: 0.0001253762748092413
+2023-07-05 19:54:19 iteration: 12800 loss: 0.0023 lr: 0.00012437837722245604
+2023-07-05 19:54:28 iteration: 12900 loss: 0.0021 lr: 0.00012337803491391242
+2023-07-05 19:54:37 iteration: 13000 loss: 0.0025 lr: 0.0001223753351951018
+2023-07-05 19:54:46 iteration: 13100 loss: 0.0023 lr: 0.00012137041630921885
+2023-07-05 19:54:56 iteration: 13200 loss: 0.0024 lr: 0.00012036336556775495
+2023-07-05 19:55:05 iteration: 13300 loss: 0.0021 lr: 0.00011935429211007431
+2023-07-05 19:55:14 iteration: 13400 loss: 0.0020 lr: 0.00011834334145532921
+2023-07-05 19:55:24 iteration: 13500 loss: 0.0024 lr: 0.00011733057181118056
+2023-07-05 19:55:33 iteration: 13600 loss: 0.0026 lr: 0.00011631612142082304
+2023-07-05 19:55:42 iteration: 13700 loss: 0.0022 lr: 0.00011530011397553608
+2023-07-05 19:55:51 iteration: 13800 loss: 0.0022 lr: 0.00011428265133872628
+2023-07-05 19:56:00 iteration: 13900 loss: 0.0021 lr: 0.00011326382809784263
+2023-07-05 19:56:09 iteration: 14000 loss: 0.0024 lr: 0.0001122437824960798
+2023-07-05 19:56:19 iteration: 14100 loss: 0.0022 lr: 0.00011122260912088677
+2023-07-05 19:56:28 iteration: 14200 loss: 0.0021 lr: 0.00011020041711162776
+2023-07-05 19:56:37 iteration: 14300 loss: 0.0023 lr: 0.00010917733743553981
+2023-07-05 19:56:46 iteration: 14400 loss: 0.0020 lr: 0.00010815347195602953
+2023-07-05 19:56:55 iteration: 14500 loss: 0.0019 lr: 0.00010712891526054591
+2023-07-05 19:57:04 iteration: 14600 loss: 0.0020 lr: 0.00010610379831632599
+2023-07-05 19:57:14 iteration: 14700 loss: 0.0022 lr: 0.00010507824481464922
+2023-07-05 19:57:22 iteration: 14800 loss: 0.0023 lr: 0.00010405234934296459
+2023-07-05 19:57:32 iteration: 14900 loss: 0.0021 lr: 0.0001030262210406363
+2023-07-05 19:57:41 iteration: 15000 loss: 0.0022 lr: 0.00010199999815085903
+2023-07-05 19:57:51 iteration: 15100 loss: 0.0021 lr: 0.00010097376070916653
+2023-07-05 19:58:00 iteration: 15200 loss: 0.0020 lr: 9.994763240683824e-05
+2023-07-05 19:58:09 iteration: 15300 loss: 0.0021 lr: 9.892174421111122e-05
+2023-07-05 19:58:19 iteration: 15400 loss: 0.0021 lr: 9.789618343347684e-05
+2023-07-05 19:58:28 iteration: 15500 loss: 0.0019 lr: 9.687106648925692e-05
+2023-07-05 19:58:36 iteration: 15600 loss: 0.0020 lr: 9.584652434568852e-05
+2023-07-05 19:58:45 iteration: 15700 loss: 0.0022 lr: 9.482265159022063e-05
+2023-07-05 19:58:54 iteration: 15800 loss: 0.0020 lr: 9.37995791900903e-05
+2023-07-05 19:59:03 iteration: 15900 loss: 0.0020 lr: 9.277737990487367e-05
+2023-07-05 19:59:12 iteration: 16000 loss: 0.0020 lr: 9.175621380563825e-05
+2023-07-05 19:59:22 iteration: 16100 loss: 0.0019 lr: 9.07361536519602e-05
+2023-07-05 19:59:31 iteration: 16200 loss: 0.0022 lr: 8.971733768703416e-05
+2023-07-05 19:59:40 iteration: 16300 loss: 0.0020 lr: 8.869987505022436e-05
+2023-07-05 19:59:49 iteration: 16400 loss: 0.0019 lr: 8.768386032897979e-05
+2023-07-05 19:59:57 iteration: 16500 loss: 0.0020 lr: 8.666941721457988e-05
+2023-07-05 20:00:06 iteration: 16600 loss: 0.0019 lr: 8.565666212234646e-05
+2023-07-05 20:00:15 iteration: 16700 loss: 0.0019 lr: 8.464568963972852e-05
+2023-07-05 20:00:24 iteration: 16800 loss: 0.0017 lr: 8.36366307339631e-05
+2023-07-05 20:00:33 iteration: 16900 loss: 0.0021 lr: 8.26295799924992e-05
+2023-07-05 20:00:42 iteration: 17000 loss: 0.0017 lr: 8.162465383065864e-05
+2023-07-05 20:00:52 iteration: 17100 loss: 0.0020 lr: 8.062196866376325e-05
+2023-07-05 20:01:01 iteration: 17200 loss: 0.0022 lr: 7.962160452734679e-05
+2023-07-05 20:01:10 iteration: 17300 loss: 0.0019 lr: 7.862371421651915e-05
+2023-07-05 20:01:20 iteration: 17400 loss: 0.0017 lr: 7.762839231872931e-05
+2023-07-05 20:01:28 iteration: 17500 loss: 0.0018 lr: 7.663572614546865e-05
+2023-07-05 20:01:38 iteration: 17600 loss: 0.0018 lr: 7.564584666397423e-05
+2023-07-05 20:01:47 iteration: 17700 loss: 0.0020 lr: 7.465887756552547e-05
+2023-07-05 20:01:57 iteration: 17800 loss: 0.0019 lr: 7.367489160969853e-05
+2023-07-05 20:02:06 iteration: 17900 loss: 0.0020 lr: 7.269399793585762e-05
+2023-07-05 20:02:15 iteration: 18000 loss: 0.0019 lr: 7.17163275112398e-05
+2023-07-05 20:02:25 iteration: 18100 loss: 0.0017 lr: 7.074198219925165e-05
+2023-07-05 20:02:34 iteration: 18200 loss: 0.0019 lr: 6.977106386329979e-05
+2023-07-05 20:02:44 iteration: 18300 loss: 0.0018 lr: 6.880368164274842e-05
+2023-07-05 20:02:53 iteration: 18400 loss: 0.0019 lr: 6.783993740100414e-05
+2023-07-05 20:03:03 iteration: 18500 loss: 0.0020 lr: 6.687993300147355e-05
+2023-07-05 20:03:13 iteration: 18600 loss: 0.0019 lr: 6.592379213543609e-05
+2023-07-05 20:03:22 iteration: 18700 loss: 0.0019 lr: 6.497160211438313e-05
+2023-07-05 20:03:31 iteration: 18800 loss: 0.0016 lr: 6.40234793536365e-05
+2023-07-05 20:03:40 iteration: 18900 loss: 0.0017 lr: 6.307950388872996e-05
+2023-07-05 20:03:50 iteration: 19000 loss: 0.0017 lr: 6.213980668690056e-05
+2023-07-05 20:03:59 iteration: 19100 loss: 0.0017 lr: 6.120448233559728e-05
+2023-07-05 20:04:08 iteration: 19200 loss: 0.0019 lr: 6.027362906024791e-05
+2023-07-05 20:04:18 iteration: 19300 loss: 0.0017 lr: 5.9347359638195485e-05
+2023-07-05 20:04:27 iteration: 19400 loss: 0.0018 lr: 5.8425757742952555e-05
+2023-07-05 20:04:36 iteration: 19500 loss: 0.0019 lr: 5.750892523792572e-05
+2023-07-05 20:04:45 iteration: 19600 loss: 0.0019 lr: 5.6596993090352044e-05
+2023-07-05 20:04:55 iteration: 19700 loss: 0.0017 lr: 5.569003042182885e-05
+2023-07-05 20:05:04 iteration: 19800 loss: 0.0017 lr: 5.478812818182632e-05
+2023-07-05 20:05:14 iteration: 19900 loss: 0.0019 lr: 5.389143552747555e-05
+2023-07-05 20:05:23 iteration: 20000 loss: 0.0018 lr: 5.299999611452222e-05
+2023-07-05 20:17:11 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle4.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle4\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2023-07-05 20:23:57 Config:
+{'all_joints': [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9]],
+ 'all_joints_names': ['Ground',
+                      'Endpoint',
+                      'hMax',
+                      'vMax',
+                      'Joint1',
+                      'Joint2',
+                      'Joint3',
+                      'Bone1',
+                      'Bone2',
+                      'predEndpoint'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_AllBones_JointLabelsMay30\\AllBones_JointLabels_Nathan95shuffle4.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\natha\\anaconda3\\envs\\DEEPLABCUT\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\efficientnet-b0\\model.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'efficientnet-b0',
+ 'num_joints': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'G:\\My Drive\\Valerolab stuff\\Projects\\Hands\\Semi-soft '
+                    'fingers\\AllBones_JointLabels-Nathan-2023-05-30\\dlc-models\\iteration-0\\AllBones_JointLabelsMay30-trainset95shuffle4\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}

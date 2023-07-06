@@ -1,0 +1,30 @@
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+- - 5
+- - 6
+- - 7
+- - 8
+- - 9
+all_joints_names:
+- Ground
+- Endpoint
+- hMax
+- vMax
+- Joint1
+- Joint2
+- Joint3
+- Bone1
+- Bone2
+- predEndpoint
+dataset: training-datasets\iteration-0\UnaugmentedDataSet_AllBones_JointLabelsMay30\AllBones_JointLabels_Nathan95shuffle3.mat
+global_scale: 0.8
+init_weights: C:\Users\natha\anaconda3\envs\DEEPLABCUT\lib\site-packages\deeplabcut\pose_estimation_tensorflow\models\pretrained\efficientnet-b0\model.ckpt
+location_refinement: true
+locref_stdev: 7.2801
+net_type: efficientnet-b0
+num_joints: 10
+scoremap_dir: test
